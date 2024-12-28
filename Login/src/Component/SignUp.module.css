@@ -1,0 +1,103 @@
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Error Message */
+.error {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Form Group */
+.formGroup {
+    margin-bottom: 15px;
+}
+
+/* Label */
+.label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input Field */
+.input, .textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.input:focus, .textarea:focus {
+    border-color: #14a44d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(20, 164, 77, 0.5);
+}
+
+/* Textarea */
+.textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Submit Button */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #14a44d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #117c3a;
+}
+
+/* Login Link */
+.login {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link {
+    color: #14a44d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}

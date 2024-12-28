@@ -1,0 +1,140 @@
+/* Container */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    padding: 16px;
+}
+
+/* Title */
+.title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #2f855a;
+    /* Green */
+    margin-bottom: 24px;
+}
+
+/* Error Message */
+.error {
+    color: #e53e3e;
+    /* Red */
+    margin-bottom: 16px;
+}
+
+/* Form */
+.form {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.formGroup {
+    margin-bottom: 16px;
+}
+
+/* Label */
+.label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5568;
+    /* Gray */
+    margin-bottom: 8px;
+}
+
+/* Input */
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    /* Light gray */
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #2f855a;
+    /* Green */
+    box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.3);
+    /* Green glow */
+}
+
+/* Button */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2f855a;
+    /* Green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #276749;
+    /* Darker Green */
+}
+
+/* Signup */
+.signup {
+    margin-top: 16px;
+}
+
+.signupLink {
+    color: #2f855a;
+    /* Green */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.signupLink:hover {
+    text-decoration: underline;
+}
+
+.forgotPassword {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgotPasswordLink {
+    color: #2f855a;
+    /* Blue color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgotPasswordLink:hover {
+    text-decoration: underline;
+}
+
+.skipButton {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skipButton .button {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skipButton .button:hover {
+    background-color: #ddd;
+}

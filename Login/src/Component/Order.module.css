@@ -1,0 +1,84 @@
+/* Main container for layout */
+.container {
+    display: flex;
+    height: 100vh; /* Full screen height */
+    width: 100%; /* Avoids horizontal scrollbar issues */
+    overflow: hidden; /* Prevents any scrollbars */
+}
+
+/* Left Section (Navbar + Outlet) */
+.leftSection {
+    width: 77%; /* Percentage for responsiveness */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Ensures no horizontal scroll */
+    overflow-y: auto; /* Allows vertical scrolling */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.leftSection::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+}
+
+/* Right Section (Cart) */
+.rightSection {
+    width: 23%; /* Percentage for responsiveness */
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Allows vertical scrolling if needed */
+    box-sizing: border-box;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.rightSection::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+}
+
+/* Global reset for consistent box-sizing and layout behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global fix for scrollbar */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevents global horizontal scroll */
+}
+
+/* Media Query for screens less than 1050px */
+@media (max-width: 1050px) {
+    .rightSection {
+        display: none;
+    }
+
+    .leftSection {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1430px) {
+    .leftSection {
+        width: 70%;
+    }
+
+    .rightSection {
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 1050px) and (max-width: 1200px) {
+    .leftSection {
+        width: 75%;
+    }
+
+    .rightSection {
+        width: 35%;
+    }
+}

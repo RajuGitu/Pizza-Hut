@@ -1,0 +1,354 @@
+.fullcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    width: 77vw;
+}
+
+/* Logo and Title */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logoImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f855a;
+    margin-bottom: 0px;
+}
+
+/* Login Button */
+.loginButton {
+    padding: 8px 16px;
+    background-color: #2f855a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+    background-color: #276749;
+}
+
+.loginLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.userContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.userContainer>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logoutButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+    background-color: #e53935;
+}
+
+.logoutIcon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Navigation Section */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    background-color: white;
+    gap: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 77vw;
+    box-sizing: border-box;
+}
+
+/* Navigation Items */
+.navItem {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* Active State */
+.active {
+    background-color: rgba(222, 27, 27, 0.795);
+    color: white;
+}
+
+/* Hover State */
+.navItem:hover {
+    background-color: rgba(214, 59, 59, 0.837);
+    color: white;
+}
+
+/* Link Style */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.addcart {
+    display: none;
+}
+
+
+/* Responsive Flex Navigation */
+.flexResponsive {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 20px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+}
+
+.showMenu {
+    display: flex;
+}
+
+.menuToggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: none;
+        /* Hide container for small screens */
+    }
+
+    .menuToggle {
+        display: block;
+        /* Show menu toggle */
+    }
+
+    .flexResponsive .navItem {
+        font-size: 1rem;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .userContainer>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoImage {
+        height: 20px;
+        width: 20px;
+        object-fit: cover;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .imageWrapper {
+        margin-right: 0px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userContainer {
+        margin-right: 0px;
+    }
+
+    .logoutButton {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .menuToggle {
+        margin-left: 20px;
+    }
+
+    .userImage {
+        height: 15px;
+        width: 15px;
+        object-fit: cover;
+    }
+}
+
+/* Responsive Styles for 500px to 900px */
+@media (min-width: 700px) and (max-width: 900px) {
+    .header {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .loginButton {
+        padding: 7px 14px;
+        font-size: 1rem;
+    }
+
+    .userContainer {
+        gap: 10px;
+    }
+
+    .userName {
+        font-size: 15px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .addcart {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+    }
+
+    .navItem {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .fullcontainer {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .addcart {
+        display: flex;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1430px) {
+    .fullcontainer {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1050px) and (max-width: 1200px) {
+    .fullcontainer {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        padding: 0px 20px;
+        width: 100%;
+    }
+}

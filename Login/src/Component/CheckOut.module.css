@@ -1,0 +1,198 @@
+.container {
+    display: flex;
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    height: 100vh;
+    /* Takes full height of the viewport */
+    padding: 20px;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    max-width: 600px;
+    /* Max width to ensure it doesn't stretch too much */
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formGroup label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    height: 55px;
+}
+
+.formGroup div {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitBtn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    /* Optional: to give a "disabled" look */
+}
+
+.blur {
+    filter: blur(3px);
+    cursor: not-allowed;
+}
+
+
+.submitBtn:hover {
+    background-color: #45a049;
+}
+
+/* Payment Method Section */
+.paymentMethod {
+    margin-bottom: 15px;
+}
+
+.paymentButtons {
+    display: flex;
+    gap: 15px;
+}
+
+.paymentBtn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.paymentBtn:hover {
+    background-color: #e0e0e0;
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+
+.images {
+    width: 285px;
+    height: 80px;
+    object-fit: contain;
+    margin: 8px 0px;
+}
+
+.totalSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Background blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure modal is on top of other elements */
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.modalImage {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.closeButton:hover {
+    color: #cc0000;
+}
+
+.modalContent p {
+    font-size: 16px;
+    /* Adjust the font size to your preference */
+    margin: 10px 0;
+    /* Space between paragraphs */
+    color: #333;
+    /* Set the text color */
+    line-height: 1.5;
+    /* Line height for better readability */
+    text-align: center;
+    /* Center-align the text */
+    font-weight: 500;
+    /* Slightly bold the text for emphasis */
+}
