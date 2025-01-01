@@ -61,4 +61,4 @@ This project represents more than just coding—it’s about solving real-world 
 To explore more, watch the demo video directly from the **public/videos** directory:
 ```html
 
-<video src="./Login/public/pizza_ordering_demo.mp4" controls></video>
+<video controls src="pizza_ordering_demo.mp4"></video>
