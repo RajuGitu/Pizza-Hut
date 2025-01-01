@@ -16,6 +16,10 @@ The platform is feature-rich and designed to enhance user experience:
 
 ---
 
+https://github.com/user-attachments/assets/df6c1f10-2ea9-4057-9702-a2876d1b666d
+
+
+
 ## 📚 Key Takeaways and Skills Acquired
 
 ### Frontend
@@ -56,9 +60,3 @@ This project sets the foundation for future enhancements, including:
 This project represents more than just coding—it’s about solving real-world problems, integrating technologies, and crafting a user-focused product. It deepened my understanding of how frontend and backend systems communicate and highlighted the importance of design and scalability in delivering a seamless user experience.
 
 ---
-
-## 📹 Video Resource
-To explore more, watch the demo video directly from the **public/videos** directory:
-```html
-
-<video controls src="pizza_ordering_demo.mp4"></video>
