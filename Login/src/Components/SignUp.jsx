@@ -19,7 +19,7 @@ const SignUp = () => {
         e.preventDefault();
 
         // Send form data to the backend
-        const response = await fetch("http://localhost:5000/practice/signup", {
+        const response = await fetch("http://localhost:8080/practice/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

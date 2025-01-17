@@ -12,7 +12,7 @@ const Sides = () => {
     useEffect(() => {
         const fetchSides = async () => {
             try {
-                const response = await fetch('http://localhost:5000/practice/sides', {
+                const response = await fetch('http://localhost:8080/practice/sides', {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const Sides = () => {
                 navigate("/login");
                 return;
             }
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

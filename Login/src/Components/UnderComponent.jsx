@@ -22,7 +22,7 @@ const UnderComponent = () => {
     const fetchCart = async () => {
         try {
             const token = localStorage.getItem("token");
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const UnderComponent = () => {
     const handleAddition = async (item) => {
         try {
             const token = localStorage.getItem("token");
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const UnderComponent = () => {
     const handleSubtraction = async (item) => {
         try {
             const token = localStorage.getItem("token");
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
@@ -97,7 +97,7 @@ const UnderComponent = () => {
     const handleDelete = async (item) => {
         try {
             const token = localStorage.getItem("token");
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: 'DELETE',
                 headers: {
                     "Content-Type": "application/json",

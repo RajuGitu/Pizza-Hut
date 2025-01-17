@@ -13,7 +13,7 @@ const ForgotPassword = () => {
         e.preventDefault();
 
         // Send form data to the backend
-        const response = await fetch("http://localhost:5000/practice/forgotpassword", {
+        const response = await fetch("http://localhost:8080/practice/forgotpassword", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

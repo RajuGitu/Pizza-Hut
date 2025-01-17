@@ -29,7 +29,7 @@ const CheckOut = () => {
     const fetchCart = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

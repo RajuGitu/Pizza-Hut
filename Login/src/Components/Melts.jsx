@@ -13,7 +13,7 @@ const Melts = () => {
     useEffect(() => {
         const fetchMelts = async () => {
             try {
-                const response = await fetch('http://localhost:5000/practice/melts', {
+                const response = await fetch('http://localhost:8080/practice/melts', {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Melts = () => {
                 navigate("/login");
                 return;
             }
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

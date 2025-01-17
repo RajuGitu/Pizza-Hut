@@ -22,7 +22,7 @@ export const CartProvider = ({ children }) => {
                 throw new Error('No authorization token found');
             }
 
-            const response = await fetch('http://localhost:5000/practice/getauthenticate', {
+            const response = await fetch('http://localhost:8080/practice/getauthenticate', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

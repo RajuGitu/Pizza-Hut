@@ -13,7 +13,7 @@ const Drinks = () => {
     useEffect(() => {
         const fetchDrinks = async () => {
             try {
-                const response = await fetch('http://localhost:5000/practice/drinks', {
+                const response = await fetch('http://localhost:8080/practice/drinks', {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Drinks = () => {
                 navigate("/login");
                 return;
             }
-            const response = await fetch('http://localhost:5000/practice/addcart', {
+            const response = await fetch('http://localhost:8080/practice/addcart', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
