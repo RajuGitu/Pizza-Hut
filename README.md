@@ -1,4 +1,3 @@
-# Frontend, Backend, and Full-Stack Development: Journey, Future Plans, and Learnings
 ## 🍕 PizzaCrust - A Full-Stack MERN Pizza Ordering Platform
 ## 🌟 A Full-Stack MERN Platform Journey
 Building a **Pizza Ordering Platform** using the MERN stack (MongoDB, Express.js, React.js, Node.js) has been a transformative step in my development career. Inspired by real-world platforms like Pizza Hut, this project merges practical functionality with creative execution. It’s not just a clone—it's a learning milestone and a full-stack demonstration of dynamic UI and secure backend logic.
